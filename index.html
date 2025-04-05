@@ -14,11 +14,10 @@
 
 <body class="bg-black text-white">
     <div class="flex container mx-auto">
-        <!-- Used to stick the left slidebar -->
-        <div class="first w-[70%] sticky top-0 overflow-y-auto h-screen">
-            <div class="logo invert my-4">
+        <div class="first w-10 md:w-[70%] sticky top-0 overflow-y-auto h-screen">
+            <div class="logo invert m-2 flex items-start">
                 <svg viewBox="0 0 24 24" aria-hidden="true"
-                    class="w-8 m-auto r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-lrsllp r-1nao33i r-16y2uox r-8kz0gk">
+                    class="w-8 flex justify-start r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-lrsllp r-1nao33i r-16y2uox r-8kz0gk">
                     <g>
                         <path
                             d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
@@ -27,66 +26,76 @@
                 </svg>
             </div>
 
-            <div class="sidebar flex justify-end">
-                <ul class="flex flex-col text-2xl space-y-3 px-5">
+            <div class="sidebar flex items-end flex-col">
+                <ul class="flex flex-col text-2xl space-y-3 font-bold md:w-full">
                     <li
-                        class="flex justify-start items-center gap-3 w-fit hover:bg-slate-900 cursor-pointer px-4 py-2 font-semibold hover:rounded-full">
-                        <span class="material-symbols-outlined text-3xl">home</span>Home
+                        class="flex justify-start items-center gap-3 md:w-fit hover:bg-slate-900 cursor-pointer px-4 py-2 font-semibold hover:rounded-full">
+                        <span class="material-symbols-outlined text-3xl">home</span><span
+                            class="hidden md:block">Home</span>
                     </li>
                     <li
                         class="flex justify-start items-center gap-3 w-fit hover:bg-slate-900 cursor-pointer px-4 py-2 font-semibold hover:rounded-full">
-                        <span class="material-symbols-outlined text-3xl">search</span>
-                        Explore
+                        <span class="material-symbols-outlined text-3xl">search</span><span
+                            class="hidden md:block">Explore</span>
+
                     </li>
                     <li
                         class="flex justify-start items-center gap-3 w-fit hover:bg-slate-900 cursor-pointer px-4 py-2 font-semibold hover:rounded-full">
-                        <span class="material-symbols-outlined text-3xl">notifications</span>Notifications
+                        <span class="material-symbols-outlined text-3xl">notifications</span><span
+                            class="hidden md:block">Notifications</span>
                     </li>
                     <li
                         class="flex justify-start items-center gap-3 w-fit hover:bg-slate-900 cursor-pointer px-4 py-2 font-semibold hover:rounded-full">
-                        <span class="material-symbols-outlined text-3xl">message</span>Messages
+                        <span class="material-symbols-outlined text-3xl">message</span><span
+                            class="hidden md:block">Messages</span>
                     </li>
                     <li
                         class="flex justify-start items-center gap-3 w-fit hover:bg-slate-900 cursor-pointer px-4 py-2 font-semibold hover:rounded-full">
-                        <span class="material-symbols-outlined text-3xl">chips</span>Grok
+                        <span class="material-symbols-outlined text-3xl">chips</span><span
+                            class="hidden md:block">Grok</span>
                     </li>
                     <li
                         class="flex justify-start items-center gap-3 w-fit hover:bg-slate-900 cursor-pointer px-4 py-2 font-semibold hover:rounded-full">
-                        <span class="material-symbols-outlined text-3xl">communities</span>Communities
+                        <span class="material-symbols-outlined text-3xl">communities</span><span
+                            class="hidden md:block">Communities</span>
                     </li>
                     <li
                         class="flex justify-start items-center gap-3 w-fit hover:bg-slate-900 cursor-pointer px-4 py-2 font-semibold hover:rounded-full">
-                        <span class="material-symbols-outlined text-3xl">verified</span>Premium
+                        <span class="material-symbols-outlined text-3xl">verified</span><span
+                            class="hidden md:block">Premium</span>
                     </li>
                     <li
                         class="flex justify-start items-center gap-3 w-fit hover:bg-slate-900 cursor-pointer px-4 py-2 font-semibold hover:rounded-full">
-                        <span class="material-symbols-outlined text-3xl">equalizer</span>Your Analytics
+                        <span class="material-symbols-outlined text-3xl">equalizer</span><span
+                            class="hidden md:block">Your Analytics</span>
                     </li>
                     <li
                         class="flex justify-start items-center gap-3 w-fit hover:bg-slate-900 cursor-pointer px-4 py-2 font-semibold hover:rounded-full">
-                        <span class="material-symbols-outlined text-3xl">bolt</span>Verified Orgs
+                        <span class="material-symbols-outlined text-3xl">bolt</span><span
+                            class="hidden md:block">Verified Orgs</span>
                     </li>
                     <li
                         class="flex justify-start items-center gap-3 w-fit hover:bg-slate-900 cursor-pointer px-4 py-2 font-semibold hover:rounded-full">
-                        <span class="material-symbols-outlined text-3xl">person</span>Profile
+                        <span class="material-symbols-outlined text-3xl">person</span><span
+                            class="hidden md:block">Profile</span>
                     </li>
                     <li
                         class="flex justify-start items-center gap-3 w-fit hover:bg-slate-900 cursor-pointer px-4 py-2 font-semibold hover:rounded-full">
-                        <span class="material-symbols-outlined text-3xl">more</span>More
+                        <span class="material-symbols-outlined text-3xl">more</span><span
+                            class="hidden md:block">More</span>
                     </li>
-                    <button
-                        class="bg-white px-4 py-3 w-[220px] mt-5 rounded-full text-2xl font-bold text-black hover:bg-gray-300 duration-300 ">Post</button>
                 </ul>
+
             </div>
-            <div class="profile flex justify-end  items-center mt-4 text-xl mr-5 gap-5">
+            <div class="profile flex justify-start hidden md:block items-center mt-4 text-xl mr-5 gap-5">
                 <div class="profile-in flex justify-start items-center gap-2">
-                    <img src="./assests/pro-img.jpg" alt="" class=" container w-20 h-20 rounded-full object-fill">
+                    <img src="./assests/pro-img.jpg" alt="" class=" container w-20 h-20 rounded-full object-fill md:w-12 md:h-12 ">
                     <div class="profile-in-in">
-                        <p class="font-semibold">Vishesh Raj</p>
-                        <p class="text-gray-600">@vishesh</p>
+                        <p class="font-semibold hidden md:inline">Vishesh Raj</p>
+                        <p class="text-gray-600 hidden md:inline">@vishesh</p>
                     </div>
                 </div>
-                <span class="material-symbols-outlined text-gray-600 hover:text-blue-500">
+                <span class="material-symbols-outlined text-gray-600 hover:text-blue-500 hidden md:block md:ml-3">
                     more_horiz
                 </span>
             </div>
@@ -107,8 +116,8 @@
                     <img src="./assests/pro-img.jpg" class=" container w-20 h-20 rounded-full object-fill" alt="">
                     <input type="text" class="bg-transparent border-none outline-0" placeholder="What's happening?">
                 </div>
-                <div class="flex mt-7 justify-between items-center gap">
-                    <ul class="flex justify-center items-center gap-5">
+                <div class="flex mt-7 justify-between items-center ">
+                    <ul class="flex justify-center items-center gap-5 ">
                         <li> <span class="material-symbols-outlined text-blue-500">
                                 Image
                             </span></li>
@@ -132,15 +141,16 @@
                             </span></li>
                     </ul>
                     <button
-                        class="bg-gray-400 px-4 py-3 w-fit mt-5 rounded-full text-xl font-bold text-black hover:bg-gray-300 duration-300 ">Post</button>
+                        class="bg-gray-400 p-2 ml-2 rounded-lg md:px-4 md:py-3 md:w-fit md:mt-5 md:rounded-full md:text-xl md:font-bold text-black hover:bg-gray-300 duration-300 ">Post</button>
                 </div>
             </div>
 
             <div class="post border-[1px] border-x-black border-y-gray-600">
-                <div >
+                <div>
                     <div class="flex justify-between items-center">
                         <div class="flex gap-5 ml-5">
-                            <img src="./assests/pro-img.jpg" class=" container w-20 h-20 rounded-full object-fill" alt="">
+                            <img src="./assests/pro-img.jpg" class=" container w-20 h-20 rounded-full object-fill"
+                                alt="">
                             <div class="mt-3">
                                 <div class="flex justify-center">
                                     Elon Musk<span class="material-symbols-outlined text-blue-500">
@@ -162,31 +172,32 @@
                         </div>
                     </div>
                     <div class="img mt-5">
-                        <img src="/assests/elon.jpg" alt="" width="420" class="ml-12 rounded-3xl">
+                        <img src="/assests/elon.jpg" alt="" width="" class="ml-12 rounded-3xl md:w-420px] w-[320px]">
                     </div>
                     <div class="tags m-12">
                         <ul class="flex gap-10">
                             <li> <span class="material-symbols-outlined text-blue-500">
-                                chat
-                            </span>7.1k</li>
+                                    chat
+                                </span>7.1k</li>
                             <li> <span class="material-symbols-outlined text-blue-500">
-                                cached
-                            </span>12K</li>
+                                    cached
+                                </span>12K</li>
                             <li> <span class="material-symbols-outlined text-blue-500">
-                                favorite
-                            </span>101K</li>
+                                    favorite
+                                </span>101K</li>
                             <li> <span class="material-symbols-outlined text-blue-500">
-                                bar_chart
-                            </span>23M</li>
+                                    bar_chart
+                                </span>23M</li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="post border-[1px] border-x-black border-y-gray-600">
-                <div >
+                <div>
                     <div class="flex justify-between items-center">
                         <div class="flex gap-5 ml-5">
-                            <img src="./assests/pro-img.jpg" class=" container w-20 h-20 rounded-full object-fill" alt="">
+                            <img src="./assests/pro-img.jpg" class=" container w-20 h-20 rounded-full object-fill"
+                                alt="">
                             <div class="mt-3">
                                 <div class="flex justify-center">
                                     Elon Musk<span class="material-symbols-outlined text-blue-500">
@@ -208,31 +219,32 @@
                         </div>
                     </div>
                     <div class="img mt-5">
-                        <img src="/assests/elon.jpg" alt="" width="420" class="ml-12 rounded-3xl">
+                        <img src="/assests/elon.jpg" alt="" width="420" class="ml-12 rounded-3xl md:w-420px] w-[320px]">
                     </div>
                     <div class="tags m-12">
                         <ul class="flex gap-10">
                             <li> <span class="material-symbols-outlined text-blue-500">
-                                chat
-                            </span>7.1k</li>
+                                    chat
+                                </span>7.1k</li>
                             <li> <span class="material-symbols-outlined text-blue-500">
-                                cached
-                            </span>12K</li>
+                                    cached
+                                </span>12K</li>
                             <li> <span class="material-symbols-outlined text-blue-500">
-                                favorite
-                            </span>101K</li>
+                                    favorite
+                                </span>101K</li>
                             <li> <span class="material-symbols-outlined text-blue-500">
-                                bar_chart
-                            </span>23M</li>
+                                    bar_chart
+                                </span>23M</li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="post border-[1px] border-x-black border-y-gray-600">
-                <div >
+                <div>
                     <div class="flex justify-between items-center">
                         <div class="flex gap-5 ml-5">
-                            <img src="./assests/pro-img.jpg" class=" container w-20 h-20 rounded-full object-fill" alt="">
+                            <img src="./assests/pro-img.jpg" class=" container w-20 h-20 rounded-full object-fill"
+                                alt="">
                             <div class="mt-3">
                                 <div class="flex justify-center">
                                     Elon Musk<span class="material-symbols-outlined text-blue-500">
@@ -254,22 +266,22 @@
                         </div>
                     </div>
                     <div class="img mt-5">
-                        <img src="/assests/elon.jpg" alt="" width="420" class="ml-12 rounded-3xl">
+                        <img src="/assests/elon.jpg" alt="" width="420" class="ml-12 rounded-3xl md:w-420px] w-[320px]">
                     </div>
                     <div class="tags m-12">
                         <ul class="flex gap-10">
                             <li> <span class="material-symbols-outlined text-blue-500">
-                                chat
-                            </span>7.1k</li>
+                                    chat
+                                </span>7.1k</li>
                             <li> <span class="material-symbols-outlined text-blue-500">
-                                cached
-                            </span>12K</li>
+                                    cached
+                                </span>12K</li>
                             <li> <span class="material-symbols-outlined text-blue-500">
-                                favorite
-                            </span>101K</li>
+                                    favorite
+                                </span>101K</li>
                             <li> <span class="material-symbols-outlined text-blue-500">
-                                bar_chart
-                            </span>23M</li>
+                                    bar_chart
+                                </span>23M</li>
                         </ul>
                     </div>
                 </div>
@@ -366,7 +378,7 @@
                         class="bg-white px-4 py-3 w-fit mt-5 rounded-full text-xl font-bold text-black hover:bg-gray-300 duration-300 ">Follow</button>
                 </div>
 
-                <div class="2 flex justify-between  items-center mt-4">
+                <div class="2 flex justify-between items-center mt-4">
                     <div class="2-in flex justify-start items-center gap-2">
                         <img src="./assests/follow-2.jpg" alt="" class="rounded-lg container w-fit h-20 object-fill">
                         <div class="2-in-in">
@@ -377,7 +389,7 @@
                     <button
                         class="bg-white px-4 py-3 w-fit mt-5 rounded-full text-xl font-bold text-black hover:bg-gray-300 duration-300 ">Follow</button>
                 </div>
-                <div class="3 flex justify-between  items-center mt-4">
+                <div class="3 flex justify-between items-center mt-4">
                     <div class="3-in flex justify-start items-center gap-2">
                         <img src="./assests/follow-3.jpg" alt="" class="rounded-lg container w-fit h-20 object-fill">
                         <div class="3-in-in">
